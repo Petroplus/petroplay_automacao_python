@@ -11,3 +11,6 @@ services:
     volumes:
       - .:/app
     restart: always
+    mem_limit: 500m
+    cpus: 0.5
+
