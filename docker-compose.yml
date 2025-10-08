@@ -3,7 +3,7 @@ version: "3.9"
 services:
   backend:
     build: .
-    container_name: petroplus_api_python_container
+    container_name: petroplay_auto
     env_file:
       - .env
     ports:
