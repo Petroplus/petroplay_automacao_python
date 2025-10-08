@@ -8,13 +8,13 @@ WORKDIR /app
 COPY requirements.txt .
 
 # Instala dependências
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install -r requirements.txt
 
 # Copia o restante do projeto
 COPY . .
 
 # Expõe a porta do backend (ajuste se diferente)
-EXPOSE 8080
+EXPOSE 5000
 
 # Comando para iniciar o backend (ajuste conforme o seu)
 CMD ["python", "main.py"]
