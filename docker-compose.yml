@@ -11,6 +11,6 @@ services:
     volumes:
       - .:/app
     restart: always
-    mem_limit: 1g
-    cpus: 1
+    mem_limit: 6g
+    cpus: 4
 
