@@ -6,6 +6,7 @@ import base64
 import requests
 import ast
 import os
+from dotenv import load_dotenv
 
 load_dotenv()
 
