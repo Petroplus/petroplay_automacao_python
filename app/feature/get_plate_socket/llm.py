@@ -9,10 +9,6 @@ import os
 
 load_dotenv()
 
-
-
-api_key = os.getenv("API_KEY_OPENAI")
-
 class GetPlateLLm:
     @staticmethod
     async def detect_plate_from_image(image_bytes: bytes) -> dict:
@@ -20,6 +16,7 @@ class GetPlateLLm:
         Envia a imagem para GPT-4V e retorna JSON {"plate": "XXX0000"} ou {"plate": null}
         """
         try:
+            api_key = os.getenv("API_KEY_OPENAI")
             
             client = OpenAI(api_key=api_key)
 
